@@ -5,9 +5,9 @@ class GuestUser(HttpUser):
     wait_time = between(1, 3)
 
     # 비회원 뉴스 페이지 조회 시나리오
-    @task(2)
-    def view_news(self):
-        self.client.get("/api/news/", name="비회원 뉴스 페이지 조회")
+    # @task(2)
+    # def view_news(self):
+    #     self.client.get("/api/news/", name="비회원 뉴스 페이지 조회")
 
     # 비회원 게시판 페이지 조회 시나리오
     @task(3)
